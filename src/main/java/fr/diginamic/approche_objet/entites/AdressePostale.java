@@ -18,6 +18,38 @@ public class AdressePostale {
 		return   numero + " " + lib + " " + dep + " " + ville;
 	}
 
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public String getLib() {
+		return lib;
+	}
+
+	public void setLib(String lib) {
+		this.lib = lib;
+	}
+
+	public int getDep() {
+		return dep;
+	}
+
+	public void setDep(int dep) {
+		this.dep = dep;
+	}
+
+	public String getVille() {
+		return ville;
+	}
+
+	public void setVille(String ville) {
+		this.ville = ville;
+	}
+
 	
 	
 	
