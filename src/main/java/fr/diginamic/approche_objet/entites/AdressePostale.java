@@ -6,6 +6,7 @@ public class AdressePostale {
 	private String lib;
 	private int dep;
 	private String ville;
+	public static int nbDepartements = 101;
 	
 	public AdressePostale(int n,String l,int d,String v){
 		this.numero = n;
