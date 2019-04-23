@@ -2,7 +2,7 @@ package fr.diginamic.approche_objet.essais;
 
 import fr.diginamic.approche_objet.entites.*;
 
-public class TestBdressPostale {
+public class TestAdressPostale {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,6 +14,7 @@ public class TestBdressPostale {
 		Personne p1 = new Personne("bobby","bob", a1);
 		Personne p2 = new Personne("bobby","anne", a2);
 
+		
 		System.out.println(p1.toString());
 		System.out.println(p2.toString());
 	}
