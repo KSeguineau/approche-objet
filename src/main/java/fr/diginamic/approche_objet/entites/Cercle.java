@@ -23,4 +23,12 @@ public class Cercle {
 	public String toString() {
 		return "Cercle [rayon=" + rayon +" périmetre="+ this.perimetre()+" surface="+this.surface()+ "]";
 	}
+
+	public Double getRayon() {
+		return rayon;
+	}
+
+	public void setRayon(Double rayon) {
+		this.rayon = rayon;
+	}
 }
