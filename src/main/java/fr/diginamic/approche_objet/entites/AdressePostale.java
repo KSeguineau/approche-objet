@@ -15,9 +15,7 @@ public class AdressePostale {
 		this.ville = v;
 	}
 
-	public String toString() {
-		return   numero + " " + lib + " " + dep + " " + ville;
-	}
+	
 
 	public int getNumero() {
 		return numero;
@@ -51,7 +49,9 @@ public class AdressePostale {
 		this.ville = ville;
 	}
 
-	
+	public String toString() {
+		return   numero + " " + lib + " " + dep + " " + ville;
+	} 
 	
 	
 }

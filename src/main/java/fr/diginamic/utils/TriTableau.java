@@ -1,4 +1,4 @@
-package fr.diginamic.utils;
+ package fr.diginamic.utils;
 
 import java.util.List;
 
@@ -12,3 +12,4 @@ public class TriTableau {
 		
 	}
 }
+  
