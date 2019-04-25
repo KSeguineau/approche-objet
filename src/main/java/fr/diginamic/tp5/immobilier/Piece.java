@@ -17,4 +17,8 @@ public abstract class Piece {
 
 	public abstract String getType();
 
+	public int getEtage() {
+		return etage;
+	}
+
 }

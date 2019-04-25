@@ -2,6 +2,10 @@ package fr.diginamic.tp5.immobilier;
 
 import java.util.ArrayList;
 
+/**
+ * @author Kevin.s
+ *
+ */
 public class Maison {
 
 	private ArrayList<Piece> tabPiece;
@@ -16,36 +20,36 @@ public class Maison {
 		this.tabPiece = tabPiece;
 	}
 
-	public void ajouterPiece(Piece p) {
+	public Maison ajouterPiece(Piece p) {
 		tabPiece.add(p);
+		return this;
 	}
 
+	/**
+	 * @return La superficie totale de la maison
+	 */
 	public double superficieTotale() {
-		double tot = 0;
-		for (int i = 0; i < tabPiece.size(); i++) {
-			tot += tabPiece.get(i).getSuperficie();
-		}
-		return tot;
+		// fait la somme d'un stream de Double des superficie des pieces creer à
+		// partir du tableau de pieces
+		return tabPiece.stream().mapToDouble(Piece::getSuperficie).sum();
+
+	}
+
+	public double superficieEtage(int i) {
+		return tabPiece.stream().filter(p -> p.getEtage() == i).mapToDouble(Piece::getSuperficie).sum();
 	}
 
 	public double superficieTotPiece(String t) {
-		double tot = 0;
-		for (int i = 0; i < tabPiece.size(); i++) {
-			if (tabPiece.get(i).getType().equals(t)) {
-				tot += tabPiece.get(i).getSuperficie();
-			}
-		}
-		return tot;
+		// filter va creer un stream contenant uniquement les pieces du type de
+		// t
+		return tabPiece.stream().filter(p -> p.getType().equals(t)).mapToDouble(Piece::getSuperficie).sum();
+
 	}
 
-	public int nbPiece(String t) {
-		int tot = 0;
-		for (int i = 0; i < tabPiece.size(); i++) {
-			if (tabPiece.get(i).getType().equals(t)) {
-				tot++;
-			}
-		}
-		return tot;
+	public long nbPiece(String t) {
+
+		return tabPiece.stream().filter(p -> p.getType().equals(t)).count();
+
 	}
 
 }
