@@ -25,6 +25,8 @@ public final class JeuUtils {
 
 	private static Creature getCreature() {
 		try {
+			// creation d'une creature à partir de son nom contenu dans la list
+			// Creature.classeCreature
 			Class<?> classe = Class.forName(Creature.NOM_PACKAGE + "."
 					+ Creature.classeCreature.get(getRand(0, Creature.classeCreature.size() - 1)));
 			Constructor<?> constructor = classe.getConstructor();
