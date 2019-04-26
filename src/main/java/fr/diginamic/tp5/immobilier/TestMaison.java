@@ -15,7 +15,7 @@ public class TestMaison {
 		maison.ajouterPiece(ch1).ajouterPiece(ch2).ajouterPiece(c1).ajouterPiece(s1).ajouterPiece(sal1)
 				.ajouterPiece(wc);
 
-		System.out.println("superficie totale" + maison.superficieTotale());
+		System.out.println("superficie totale" + maison.calculerSurface());
 		System.out.println("superficie du RDC" + maison.superficieEtage(0));
 		System.out.println("superficie chambre " + maison.superficieTotPiece("Chambre"));
 		System.out.println("superficie salon " + maison.superficieTotPiece("Salon"));

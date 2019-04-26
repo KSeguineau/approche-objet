@@ -2,11 +2,13 @@ package fr.diginamic.tp5.immobilier;
 
 import java.util.ArrayList;
 
+import fr.diginamic.tp6.CalculerSurface.ISurface;
+
 /**
  * @author Kevin.s
  *
  */
-public class Maison {
+public class Maison implements ISurface {
 
 	private ArrayList<Piece> tabPiece;
 
@@ -28,7 +30,7 @@ public class Maison {
 	/**
 	 * @return La superficie totale de la maison
 	 */
-	public double superficieTotale() {
+	public double calculerSurface() {
 		// fait la somme d'un stream de Double des superficie des pieces creer à
 		// partir du tableau de pieces
 		return tabPiece.stream().mapToDouble(Piece::getSuperficie).sum();
