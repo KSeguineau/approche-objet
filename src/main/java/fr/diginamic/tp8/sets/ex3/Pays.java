@@ -2,12 +2,12 @@ package fr.diginamic.tp8.sets.ex3;
 
 import java.text.DecimalFormat;
 
-public class Pays {
+public class Pays implements Comparable<Pays> {
 
-	String nom;
-	long nbHabitants;
-	long pibHab;
-	DecimalFormat formateur = new DecimalFormat("###,###");
+	private String nom;
+	private long nbHabitants;
+	private long pibHab;
+	private DecimalFormat formateur = new DecimalFormat("###,###");
 
 	public Pays(String nom, long nbHabitants, long pib) {
 		super();
@@ -75,6 +75,16 @@ public class Pays {
 		if (pibHab != other.pibHab)
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Pays arg0) {
+		return nom.compareTo(arg0.getNom());
+
+		/*
+		 * if (this.pibHab == arg0.getPib()) { return 0; } else if (this.pibHab
+		 * < arg0.getPib()) { return -1; } else { return 1; }
+		 */
 	}
 
 }
