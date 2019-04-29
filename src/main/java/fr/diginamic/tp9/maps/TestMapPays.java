@@ -8,7 +8,7 @@ import fr.diginamic.tp8.sets.ex3.Pays;
 
 public class TestMapPays {
 
-	public static void suprimerMoinsHabitants(Map<String, Pays> map) {
+	public static void supprimerMoinsHabitants(Map<String, Pays> map) {
 		Iterator<String> itKey = map.keySet().iterator();
 		String minHabitants;
 
@@ -50,7 +50,7 @@ public class TestMapPays {
 
 		System.out.println(map.keySet());
 		System.out.println(map.values());// ils ne sont pas dans l'ordre d'ajout
-		suprimerMoinsHabitants(map);
+		supprimerMoinsHabitants(map);
 		System.out.println(map.keySet());
 
 	}

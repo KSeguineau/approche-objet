@@ -17,7 +17,7 @@ public class TestVille {
 		return tmp;
 	}
 
-	public static void suprimerMoinsPeuplee(List<Ville> list) {
+	public static void supprimerMoinsPeuplee(List<Ville> list) {
 		Ville tmp = list.get(0);
 		int indice = 0;
 
@@ -48,7 +48,7 @@ public class TestVille {
 
 		System.out.println(list);
 		System.out.println(plusPeuplee(list));
-		suprimerMoinsPeuplee(list);
+		supprimerMoinsPeuplee(list);
 		System.out.println(list);
 		plusCentMille(list);
 		System.out.println(list);

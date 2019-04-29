@@ -58,7 +58,7 @@ public class TestPays {
 		}
 	}
 
-	public static void suprimerPlusPetitPib(Set<Pays> set) {
+	public static void supprimerPlusPetitPib(Set<Pays> set) {
 		Iterator<Pays> it = set.iterator();
 		Pays plusPetitPib = null;
 		if (it.hasNext()) {
@@ -93,7 +93,7 @@ public class TestPays {
 		System.out.println(plusGrandPibTot(hashset));
 		majPlusPetitPib(hashset);
 		System.out.println(hashset);
-		suprimerPlusPetitPib(hashset);
+		supprimerPlusPetitPib(hashset);
 		System.out.println(hashset);
 	}
 

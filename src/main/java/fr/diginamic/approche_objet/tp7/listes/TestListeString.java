@@ -25,7 +25,7 @@ public class TestListeString {
 
 	}
 
-	public static void suprimerParPremiereLettre(char c, List<String> list) {
+	public static void supprimerParPremiereLettre(char c, List<String> list) {
 		Iterator<String> it = list.iterator();
 		while (it.hasNext()) {
 			String tmp = it.next();
@@ -42,7 +42,7 @@ public class TestListeString {
 		System.out.println(plusGrandNom(list));
 		majuscule(list);
 		System.out.println(list);
-		suprimerParPremiereLettre('N', list);
+		supprimerParPremiereLettre('N', list);
 		System.out.println(list);
 
 	}

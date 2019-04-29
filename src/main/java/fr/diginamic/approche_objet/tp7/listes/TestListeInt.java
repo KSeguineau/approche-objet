@@ -13,7 +13,7 @@ public class TestListeInt {
 		list.forEach(e -> System.out.print(e + " "));
 		System.out.println();
 		System.out.println("la plus grande valeur est " + plusGrandElement(list));
-		suprimerPlusPetit(list);
+		supprimerPlusPetit(list);
 		rendreElemPositif(list);
 		System.out.println(list);
 
@@ -29,7 +29,7 @@ public class TestListeInt {
 		return max;
 	}
 
-	public static void suprimerPlusPetit(List<Integer> list) {
+	public static void supprimerPlusPetit(List<Integer> list) {
 		int indice = -1;
 		int min = Integer.MAX_VALUE;
 
