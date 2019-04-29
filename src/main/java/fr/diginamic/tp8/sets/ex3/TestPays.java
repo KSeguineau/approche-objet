@@ -86,7 +86,7 @@ public class TestPays {
 		Pays russie = new Pays("Russie", 146780700, 11099);
 		Pays inde = new Pays("Inde", 1296834042, 1626);
 
-		HashSet<Pays> hashset = new HashSet<>();
+		Set<Pays> hashset = new HashSet<>();
 		hashset.addAll(Arrays.asList(usa, france, allemagne, uk, italie, japon, chine, russie, inde));
 
 		System.out.println(plusGrandPibHab(hashset));

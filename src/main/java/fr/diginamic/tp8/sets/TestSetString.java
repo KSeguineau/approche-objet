@@ -21,7 +21,7 @@ public class TestSetString {
 	}
 
 	public static void main(String[] args) {
-		HashSet<String> hashset = new HashSet<>();
+		Set<String> hashset = new HashSet<>();
 		hashset.addAll(Arrays.asList("USA", "France", "Allemagne", "UK", "Italie", "Japon", "Chine", "Russie", "Inde"));
 
 		System.out.println(plusLong(hashset));

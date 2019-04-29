@@ -23,7 +23,7 @@ public class TestSetDouble {
 
 	public static void main(String[] args) {
 
-		HashSet<Double> hashset = new HashSet<>();
+		Set<Double> hashset = new HashSet<>();
 		hashset.addAll(Arrays.asList(1.5, 8.25, -7.32, 13.3, -12.45, 48.5, 0.01, 13.3));
 
 		System.out.println(hashset);// il ne sont pas dans l'ordre car les
