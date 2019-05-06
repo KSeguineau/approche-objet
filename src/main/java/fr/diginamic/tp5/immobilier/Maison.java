@@ -23,7 +23,9 @@ public class Maison implements ISurface {
 	}
 
 	public Maison ajouterPiece(Piece p) {
-		tabPiece.add(p);
+		if (p != null) {
+			tabPiece.add(p);
+		}
 		return this;
 	}
 
@@ -48,10 +50,26 @@ public class Maison implements ISurface {
 
 	}
 
+	/**
+	 * retourne le nombre de piece du type du parametre dans la maison
+	 * 
+	 * @param t
+	 *            type d'une piece
+	 * @return long
+	 */
 	public long nbPiece(String t) {
 
 		return tabPiece.stream().filter(p -> p.getType().equals(t)).count();
 
+	}
+
+	/**
+	 * Getter
+	 * 
+	 * @return the tabPiece
+	 */
+	public ArrayList<Piece> getTabPiece() {
+		return tabPiece;
 	}
 
 }
